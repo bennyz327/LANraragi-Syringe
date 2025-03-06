@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html {
+        min-height: 5em;
+        min-width: 50em;
+        background: grey;
+        color: white;
+      }
+    </style>
+    <meta charset="utf-8" />
+    <title>LANraragi Syringe - Setting</title>
+  </head>
+  <body>
+    <h1>LANraragi Syringe - Setting</h1>
+    <p>在此新增/移除想要替換文字的 LANraragi 網域（正確範例:"http://localhost:3000"）</p>
+
+    <input type="text" id="domainInput" placeholder="" />
+    <button id="addDomainBtn">新增 LANraragi 網域</button>
+
+    <ul id="domainList"></ul>
+
+    <hr />
+    <h2>翻譯字典設定</h2>
+    <label for="originalText">原文字：</label>
+    <input id="originalText" type="text" />
+    <label for="replaceText">替換文字：</label>
+    <input id="replaceText" type="text" />
+    <button id="addRuleBtn">新增替換規則</button>
+
+    <ul id="ruleList"></ul>
+
+    <script src="options.js"></script>
+  </body>
+</html>
